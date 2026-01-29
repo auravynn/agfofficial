@@ -1,232 +1,384 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>AGF Ticket Bot – Privacy Policy</title>
-  <meta name="description" content="Privacy Policy of the AGF Ticket Bot – official ticket & support system for Anti Gang Force communities." />
+  <title>AGF • ANTI GANG FORCE – LIBERTY COUNTY DOMINANCE</title>
+  <meta name="description" content="Anti Gang Force: From FBI roots to independent elite mafia in ER:LC. 100+ agents. We fight all. We own all. discord.gg/agf"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@600;700;900&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #0d0d12;
-      --text: #e0e0ff;
-      --accent: #3b82f6;
-      --accent-dark: #2563eb;
-      --border: #1e293b;
+      --bg-void: #00030a;
+      --bg-deep: #02050f;
+      --bg-layer: #0a1122;
+      --card-dark: rgba(5, 10, 25, 0.82);
+      --text-glow: #d1d5ff;
+      --text-dim: #8a9cff;
+      --neon-blue: #00d4ff;
+      --neon-cyan: #00faff;
+      --neon-purple: #c300ff;
+      --neon-red: #ff2d55;
+      --neon-green: #39ff14;
+      --gradient-multi: linear-gradient(90deg, #00d4ff, #c300ff, #ff2d55, #39ff14, #00faff);
+      --glow-blue: rgba(0,212,255,0.8);
+      --glow-purple: rgba(195,0,255,0.7);
+      --glow-red: rgba(255,45,85,0.6);
+      --border-neon: rgba(0,212,255,0.3);
+      --glass-void: rgba(10,17,34,0.6);
+      --transition: all 0.5s cubic-bezier(0.23,1,0.32,1);
     }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
-      font-family: 'Segoe UI', system-ui, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-      padding: 20px;
+      margin:0; font-family:'Inter',sans-serif; background:var(--bg-void); color:var(--text-glow);
+      background-image: radial-gradient(circle at 10% 20%, rgba(0,212,255,0.08) 0%, transparent 35%),
+                        radial-gradient(circle at 90% 80%, rgba(195,0,255,0.07) 0%, transparent 40%);
+      background-attachment:fixed; line-height:1.6; overflow-x:hidden;
     }
-
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      background: #111827;
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      overflow: hidden;
-    }
-
-    header {
-      background: linear-gradient(135deg, #1e3a8a, #1e40af);
-      padding: 60px 30px 40px;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 2.6rem;
-      margin-bottom: 8px;
-      color: white;
-    }
-
-    header .subtitle {
-      font-size: 1.1rem;
-      opacity: 0.9;
-    }
-
-    .eagle {
-      font-size: 3.5rem;
-      margin-bottom: 12px;
-    }
-
-    main {
-      padding: 40px 30px;
-    }
-
-    h2 {
-      color: var(--accent);
-      margin: 2.2rem 0 1rem;
-      font-size: 1.65rem;
-      border-bottom: 2px solid var(--border);
-      padding-bottom: 8px;
-    }
-
-    h3 {
-      color: #93c5fd;
-      margin: 1.8rem 0 0.8rem;
-      font-size: 1.35rem;
-    }
-
-    p, li {
-      margin-bottom: 1.1rem;
-      font-size: 1.05rem;
-    }
-
-    ul {
-      padding-left: 1.8rem;
-      margin: 1rem 0;
-    }
-
-    li {
-      margin-bottom: 0.7rem;
-    }
-
-    strong {
-      color: #93c5fd;
-    }
-
-    .contact {
-      background: #172554;
-      padding: 24px;
-      border-radius: 10px;
-      margin: 2.5rem 0;
-      border-left: 5px solid var(--accent);
-    }
-
-    .footer {
-      text-align: center;
-      padding: 30px;
-      background: #0f172a;
-      font-size: 0.95rem;
-      color: #94a3b8;
-      border-top: 1px solid var(--border);
-    }
-
-    .footer a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    .footer a:hover {
-      text-decoration: underline;
-    }
-
-    @media (max-width: 600px) {
-      header h1 { font-size: 2.1rem; }
-      header { padding: 50px 20px 35px; }
-      main { padding: 30px 20px; }
-    }
+    ::selection { background:var(--neon-purple); color:#000; }
+    ::-webkit-scrollbar { width:14px; }
+    ::-webkit-scrollbar-track { background:var(--bg-deep); }
+    ::-webkit-scrollbar-thumb { background:var(--gradient-multi); border-radius:7px; }
+    .particles { position:fixed; inset:0; pointer-events:none; z-index:-1; opacity:0.6; }
+    header { position:relative; text-align:center; padding:16rem 2rem 10rem; overflow:hidden; }
+    .header-void { position:absolute; inset:0; background:linear-gradient(to bottom, transparent, var(--bg-void)); z-index:1; }
+    .logo-orbit { width:420px; height:420px; margin:0 auto 4rem; position:relative; z-index:2; }
+    .logo-core { width:100%; height:100%; border-radius:50%; box-shadow:0 0 120px var(--glow-blue), 0 0 240px var(--glow-purple), inset 0 0 80px var(--glow-red); animation:pulseOrbit 8s infinite alternate, floatEpic 16s ease-in-out infinite; transition:transform 0.8s; }
+    .logo-core:hover { transform:scale(1.2) rotate(15deg); filter:brightness(1.3); }
+    h1 { font-family:'Orbitron',sans-serif; font-size:clamp(6rem,16vw,12rem); margin:0; background:var(--gradient-multi); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; text-shadow:0 0 80px var(--glow-blue); animation:glitchText 12s infinite alternate; letter-spacing:8px; position:relative; z-index:2; }
+    .main-tag { font-size:3.8rem; font-weight:900; background:var(--gradient-multi); -webkit-background-clip:text; -webkit-text-fill-color:transparent; margin:2.5rem 0; text-shadow:0 0 60px var(--glow-purple); animation:textBeat 5s infinite; }
+    .discord-orb { display:inline-block; margin:4rem 2rem; padding:1.8rem 5rem; background:var(--gradient-multi); color:#000; font-size:2rem; font-weight:bold; border-radius:9999px; text-decoration:none; box-shadow:0 0 80px var(--glow-blue); transition:var(--transition); position:relative; overflow:hidden; z-index:3; }
+    .discord-orb:hover { transform:translateY(-15px) scale(1.1); box-shadow:0 30px 120px var(--glow-purple); }
+    .discord-orb::before { content:''; position:absolute; top:-50%; left:-50%; width:200%; height:200%; background:radial-gradient(circle, rgba(255,255,255,0.4) 10%, transparent 60%); opacity:0; transition:opacity 0.9s; }
+    .discord-orb:hover::before { opacity:1; }
+    .sticky-void { position:sticky; top:0; z-index:1000; background:rgba(0,3,10,0.96); backdrop-filter:blur(30px); border-bottom:1px solid var(--border-neon); padding:1.6rem 0; box-shadow:0 15px 50px rgba(0,0,0,0.9); }
+    .nav-inner { max-width:1600px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; padding:0 3rem; }
+    .nav-emblem { width:80px; height:80px; border-radius:50%; box-shadow:0 0 40px var(--glow-cyan); }
+    .nav-links a { color:var(--text-dim); text-decoration:none; margin:0 2.5rem; font-weight:600; font-size:1.3rem; transition:var(--transition); }
+    .nav-links a:hover { color:var(--neon-cyan); text-shadow:0 0 25px var(--glow-cyan); transform:translateY(-4px); }
+    .main-content { max-width:1600px; margin:-10rem auto 12rem; padding:7rem 5rem; background:var(--card-dark); backdrop-filter:blur(32px); border-radius:48px; border:1px solid var(--border-neon); box-shadow:0 50px 140px rgba(0,0,0,0.95); position:relative; z-index:10; }
+    .section-h { font-family:'Orbitron',sans-serif; font-size:4.5rem; text-align:center; margin-bottom:5rem; background:var(--gradient-multi); -webkit-background-clip:text; -webkit-text-fill-color:transparent; text-shadow:0 0 70px var(--glow-blue); }
+    .card-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(380px,1fr)); gap:4rem; margin:6rem 0; }
+    .neon-card { background:rgba(5,10,25,0.7); border:1px solid var(--border-neon); border-radius:32px; padding:4rem 3rem; transition:var(--transition); position:relative; overflow:hidden; backdrop-filter:blur(16px); }
+    .neon-card:hover { transform:translateY(-20px); box-shadow:0 40px 120px var(--glow-purple); border-color:var(--neon-cyan); }
+    .neon-card::after { content:''; position:absolute; top:50%; left:50%; width:0; height:0; background:radial-gradient(circle, rgba(195,0,255,0.3) 10%, transparent 70%); border-radius:50%; transform:translate(-50%,-50%); opacity:0; transition:all 1s; }
+    .neon-card:hover::after { width:600px; height:600px; opacity:1; }
+    .icon-big { font-size:6rem; margin-bottom:2rem; background:var(--gradient-multi); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
+    .stats-cluster { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:3rem; text-align:center; margin:7rem 0; }
+    .stat-block { background:rgba(10,17,34,0.8); border-radius:28px; padding:4rem 2.5rem; border:1px solid var(--border-neon); transition:var(--transition); }
+    .stat-block:hover { transform:scale(1.15); border-color:var(--neon-red); box-shadow:0 0 80px var(--glow-red); }
+    .stat-num { font-size:6rem; font-weight:900; color:var(--neon-cyan); margin-bottom:1.5rem; text-shadow:0 0 50px var(--glow-cyan); opacity:0; animation:countGlow 4s forwards; }
+    .privacy-nest details { margin:2.5rem 0; border-bottom:1px solid var(--border-neon); }
+    .privacy-nest summary { font-family:'Orbitron',sans-serif; font-size:2.2rem; color:var(--neon-blue); cursor:pointer; padding:1.8rem 0; transition:var(--transition); }
+    .privacy-nest summary:hover { color:var(--neon-purple); text-shadow:0 0 30px var(--glow-purple); }
+    .privacy-nest .inner-content { padding:2rem 0 4rem; font-size:1.2rem; }
+    .recruit-form { background:rgba(5,10,25,0.75); border:1px solid var(--neon-green); border-radius:32px; padding:5rem 4rem; margin:6rem 0; text-align:center; }
+    .recruit-form input, .recruit-form textarea { width:100%; max-width:600px; padding:1.2rem; margin:1rem auto; display:block; background:rgba(255,255,255,0.05); border:1px solid var(--border-neon); border-radius:12px; color:var(--text-glow); font-size:1.3rem; }
+    .recruit-form button { padding:1.5rem 5rem; background:var(--gradient-multi); color:#000; border:none; border-radius:9999px; font-size:1.8rem; font-weight:bold; cursor:pointer; margin-top:2rem; box-shadow:0 0 60px var(--glow-blue); transition:var(--transition); }
+    .recruit-form button:hover { transform:scale(1.1); box-shadow:0 0 100px var(--glow-purple); }
+    footer { text-align:center; padding:12rem 2rem 15rem; background:linear-gradient(to top, rgba(195,0,255,0.2), transparent); position:relative; }
+    .footer-pulse { position:absolute; bottom:0; left:0; right:0; height:500px; background:radial-gradient(circle at bottom, rgba(0,212,255,0.4) 0%, transparent 70%); pointer-events:none; }
+    .back-comet { position:fixed; bottom:5rem; right:5rem; background:var(--gradient-multi); color:#000; width:90px; height:90px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:3rem; cursor:pointer; opacity:0; transform:scale(0.6) translateY(120px); transition:all 0.8s cubic-bezier(0.175,0.885,0.32,1.275); box-shadow:0 0 80px var(--glow-cyan); z-index:99999; }
+    .back-comet.show { opacity:1; transform:scale(1) translateY(0); }
+    #scroll-rainbow { position:fixed; top:0; left:0; height:8px; background:var(--gradient-multi); width:0%; z-index:100000; box-shadow:0 0 30px var(--glow-blue); transition:width 0.2s linear; }
+    @keyframes pulseOrbit { 0% { box-shadow:0 0 100px var(--glow-blue), 0 0 200px var(--glow-purple); } 100% { box-shadow:0 0 200px var(--glow-blue), 0 0 400px var(--glow-purple), 0 0 600px var(--glow-red); } }
+    @keyframes floatEpic { 0%,100% { transform:translateY(0); } 50% { transform:translateY(-60px); } }
+    @keyframes glitchText { 0%,100% { text-shadow:0 0 80px var(--glow-blue); } 20% { text-shadow:2px 0 var(--neon-red), -2px 0 var(--neon-cyan); } 40% { text-shadow:-2px 0 var(--neon-purple), 2px 0 var(--neon-green); } }
+    @keyframes textBeat { 0%,100% { transform:scale(1); } 50% { transform:scale(1.04); } }
+    @keyframes countGlow { to { opacity:1; } }
+    @media (max-width:900px) { header { padding:12rem 1rem 8rem; } .logo-orbit { width:320px; height:320px; } h1 { font-size:8rem; } .main-content { padding:5rem 3rem; margin:-8rem auto 10rem; } }
   </style>
 </head>
 <body>
 
-<div class="container">
+  <canvas class="particles" id="neon-void"></canvas>
 
-  <header>
-    <div class="eagle">🦅</div>
-    <h1>AGF Ticket Bot</h1>
-    <div class="subtitle">Privacy Policy</div>
-  </header>
+  <div id="scroll-rainbow"></div>
 
-  <main>
+  <button class="back-comet" onclick="window.scrollTo({top:0,behavior:'smooth'})">🦅</button>
 
-    <p style="text-align:center; font-style:italic; margin: 20px 0 40px; color:#cbd5e1;">
-      Last updated: January 28, 2026
-    </p>
-
-    <p>
-      <strong>Anti Gang Force</strong> (“we”, “us”, “our”) operates the AGF Ticket Bot (the “Bot”), a Discord bot providing ticket and support features exclusively for communities affiliated with Anti Gang Force.
-    </p>
-
-    <p>
-      We are committed to protecting your privacy and only collect the absolute minimum data required for the Bot to function.
-    </p>
-
-    <h2>1. Information We Collect</h2>
-
-    <p>We collect only what is strictly necessary:</p>
-    <ul>
-      <li>Discord IDs (users, servers, channels, roles)</li>
-      <li>Ticket messages & system logs (open/close timestamps, claimant)</li>
-      <li>Transcripts of closed tickets (if enabled by server admins)</li>
-      <li>Server-specific settings (categories, panels, staff roles, etc.)</li>
-    </ul>
-
-    <p><strong>We do NOT collect:</strong></p>
-    <ul>
-      <li>Messages outside of tickets</li>
-      <li>IP addresses, emails, voice data</li>
-      <li>Any financial or sensitive personal data</li>
-    </ul>
-
-    <h2>2. How We Use Your Information</h2>
-    <ul>
-      <li>To operate the ticket system (create, assign, close tickets)</li>
-      <li>To generate transcripts for staff review (when enabled)</li>
-      <li>To debug issues and prevent abuse</li>
-      <li>To produce anonymized statistics (total tickets, average close time, etc.)</li>
-    </ul>
-
-    <h2>3. Data Storage & Retention</h2>
-    <ul>
-      <li>Data is stored on secure servers with encryption in transit</li>
-      <li>Active tickets → kept until closed</li>
-      <li>Closed tickets & transcripts → deleted after <strong>30 days</strong> (unless server admins choose longer retention)</li>
-      <li>Server settings → deleted when bot is removed from the server</li>
-    </ul>
-
-    <h2>4. Data Sharing</h2>
-    <p>We <strong>never</strong> sell or use your data for advertising.</p>
-    <p>Data is shared only:</p>
-    <ul>
-      <li>With server administrators/staff (they control ticket access)</li>
-      <li>If legally required (court order, subpoena, imminent harm)</li>
-      <li>With hosting/database providers under strict confidentiality</li>
-    </ul>
-
-    <h2>5. Your Rights</h2>
-    <ul>
-      <li><strong>Access</strong> – ask what data we hold</li>
-      <li><strong>Deletion</strong> – remove bot from server → most data deleted automatically</li>
-      <li>Contact us for manual user data deletion</li>
-      <li>Disable transcript saving via bot commands (if feature available)</li>
-    </ul>
-
-    <div class="contact">
-      <h3>Contact Us</h3>
-      <p>If you have questions, want to delete data or report a concern:</p>
-      <ul style="list-style:none; padding-left:0;">
-        <li>• Join the official Anti Gang Force Discord and open a ticket</li>
-        <li>• DM <strong>@[your-main-admin-username]</strong></li>
-        <li>• Email: <strong>privacy@agf-bot.com</strong> (if you have set up an email)</li>
-      </ul>
+  <div class="sticky-void">
+    <div class="nav-inner">
+      <img src="https://i.imgur.com/hcGOpV1.png" alt="AGF Emblem" class="nav-emblem">
+      <div class="nav-links">
+        <a href="#origin">Origin</a>
+        <a href="#leaders">Leaders</a>
+        <a href="#stats">Stats</a>
+        <a href="#rules">Rules</a>
+        <a href="#recruit">Recruit</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#discord">Discord</a>
+      </div>
     </div>
-
-    <h2>6. Changes to this Policy</h2>
-    <p>We may update this policy occasionally. Significant changes will be announced in our official Discord server or via the bot.</p>
-
-    <h2>7. Compliance</h2>
-    <p>This policy complies with Discord’s Developer Terms of Service and Developer Policy.</p>
-    <p>For Discord’s own privacy policy → <a href="https://discord.com/privacy" target="_blank" style="color:var(--accent);">discord.com/privacy</a></p>
-
-  </main>
-
-  <div class="footer">
-    <p>🦅 ORDER. DISCIPLINE. CONTROL. 🦅<br>
-    Anti Gang Force – EST. May 2025</p>
   </div>
 
-</div>
+  <header>
+    <div class="header-void"></div>
+    <div class="logo-orbit">
+      <img src="https://i.imgur.com/hcGOpV1.png" alt="ANTI GANG FORCE – Glowing Eagle" class="logo-core">
+    </div>
+    <h1>ANTI GANG FORCE</h1>
+    <div class="main-tag">WE FIGHT ALL. WE OWN ALL. 🦅</div>
+    <a href="https://discord.gg/agf" target="_blank" class="discord-orb">JOIN DISCORD.gg/AGF</a>
+    <div style="margin-top:5rem; font-size:2.5rem; opacity:0.9;">
+      Elite COMP Mafia in Emergency Response: Liberty County • EST. 2025
+    </div>
+  </header>
+
+  <div class="main-content">
+
+    <section id="origin">
+      <h2 class="section-h">OUR ORIGIN STORY</h2>
+      <p style="font-size:1.6rem; text-align:center; max-width:1200px; margin:0 auto 5rem; color:var(--text-dim);">
+        AGF began as a specialized unit under FBI command in Liberty County — tasked with dismantling criminal networks and mafia operations.<br><br>
+        We fought alongside law enforcement to bring order to chaos.<br>
+        But we outgrew the chains. We separated. We became independent.<br>
+        Today: 100+ elite agents. No oversight. Pure dominance.
+      </p>
+    </section>
+
+    <section id="leaders">
+      <h2 class="section-h">LEADERSHIP CORE</h2>
+      <div class="card-grid">
+        <div class="neon-card">
+          <div class="icon-big">K</div>
+          <h3 style="font-size:3rem; text-align:center; margin-bottom:1.5rem; color:var(--neon-blue);">Kris</h3>
+          <p>Founder. Strategic mastermind. The original visionary who led us out of the shadows.</p>
+        </div>
+        <div class="neon-card">
+          <div class="icon-big">S</div>
+          <h3 style="font-size:3rem; text-align:center; margin-bottom:1.5rem; color:var(--neon-cyan);">swjk</h3>
+          <p>Co-leader. Tactical genius. Keeps the force disciplined and unstoppable.</p>
+        </div>
+        <div class="neon-card">
+          <div class="icon-big">M</div>
+          <h3 style="font-size:3rem; text-align:center; margin-bottom:1.5rem; color:var(--neon-purple);">MDA</h3>
+          <p>Current triad leader. Ruthless enforcer. Ensures we own every corner of Liberty County.</p>
+        </div>
+        <div class="neon-card" style="grid-column:span 2; max-width:800px; margin:0 auto;">
+          <div class="icon-big">✝</div>
+          <h3 style="font-size:3rem; text-align:center; margin-bottom:1.5rem; color:var(--neon-red);">Makarov (Former)</h3>
+          <p>Original co-founder. Left the force. Legacy lives on in our iron will.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="stats">
+      <h2 class="section-h">FORCE STATS</h2>
+      <div class="stats-cluster">
+        <div class="stat-block">
+          <div class="stat-num" data-target="100">+</div>
+          <p style="font-size:2rem;">Elite Agents</p>
+        </div>
+        <div class="stat-block">
+          <div class="stat-num" data-target="2025">EST</div>
+          <p style="font-size:2rem;">Founded</p>
+        </div>
+        <div class="stat-block">
+          <div class="stat-num" data-target="∞">Control</div>
+          <p style="font-size:2rem;">Liberty County</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="rules">
+      <h2 class="section-h">CODE OF CONDUCT</h2>
+      <div class="card-grid">
+        <div class="neon-card"><p style="font-size:1.8rem;">1. Loyalty above all — betray the force, face elimination.</p></div>
+        <div class="neon-card"><p style="font-size:1.8rem;">2. Discipline is law — no chaos, no weakness.</p></div>
+        <div class="neon-card"><p style="font-size:1.8rem;">3. Protect the family — agents first, always.</p></div>
+        <div class="neon-card"><p style="font-size:1.8rem;">4. Fight all threats — criminals, cops, rivals. No exceptions.</p></div>
+        <div class="neon-card"><p style="font-size:1.8rem;">5. Own everything — territory, respect, power.</p></div>
+      </div>
+    </section>
+
+    <section id="recruit">
+      <h2 class="section-h">RECRUITMENT</h2>
+      <div class="recruit-form">
+        <h3 style="font-size:3.5rem; margin-bottom:2rem; color:var(--neon-green);">BECOME AN AGENT</h3>
+        <p style="font-size:1.6rem; margin-bottom:3rem;">Join the strongest force in ER:LC. Prove your worth.</p>
+        <form action="https://discord.gg/agf" target="_blank">
+          <input type="text" placeholder="Roblox Username" required>
+          <input type="text" placeholder="Discord Tag (e.g. user#1234)" required>
+          <textarea placeholder="Why should AGF accept you? (200 chars max)" maxlength="200" rows="5"></textarea>
+          <button type="submit">SUBMIT APPLICATION → JOIN DISCORD</button>
+        </form>
+        <p style="margin-top:3rem; font-size:1.4rem;">All applications reviewed by leadership. Expect contact within 48 hours if selected.</p>
+      </div>
+    </section>
+
+    <section id="privacy">
+      <h2 class="section-h">PRIVACY POLICY – AGF TICKET BOT & DATA</h2>
+      <div class="privacy-nest">
+        <details open>
+          <summary>1. Information We Collect</summary>
+          <div class="inner-content">
+            <ul style="list-style-type:disc; padding-left:3rem; font-size:1.3rem;">
+              <li>Discord user IDs & usernames (ticket participants only)</li>
+              <li>Messages sent inside tickets</li>
+              <li>Transcripts (only if enabled by server admins)</li>
+              <li>Server config (categories, roles, log channels)</li>
+            </ul>
+            <p style="margin-top:2rem; font-weight:bold; color:var(--neon-red);">We NEVER collect: IPs, emails, DMs, voice, non-ticket messages, payment info, or unrelated data.</p>
+          </div>
+        </details>
+        <details>
+          <summary>2. How We Use Data</summary>
+          <div class="inner-content">
+            <ul style="list-style-type:disc; padding-left:3rem; font-size:1.3rem;">
+              <li>Operate ticket creation, management, and closure</li>
+              <li>Generate & deliver transcripts when requested</li>
+              <li>Anonymized debugging and bot improvements</li>
+              <li>Optional anonymized stats for server owners</li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>3. Storage & Retention</summary>
+          <div class="inner-content">
+            <ul style="list-style-type:disc; padding-left:3rem; font-size:1.3rem;">
+              <li>All data encrypted in transit and at rest</li>
+              <li>Closed tickets/transcripts auto-deleted after 30 days (admins can adjust)</li>
+              <li>Server settings deleted immediately on bot removal</li>
+              <li>No permanent cross-server user profiling</li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>4. Data Sharing</summary>
+          <div class="inner-content">
+            <p style="font-weight:bold; color:var(--neon-green);">We do NOT sell, trade, or monetize your data in any way.</p>
+            <ul style="list-style-type:disc; padding-left:3rem; font-size:1.3rem; margin-top:1.5rem;">
+              <li>Only accessible to your server's authorized staff</li>
+              <li>Secure hosting providers (under strict confidentiality)</li>
+              <li>Legal authorities only if compelled by law</li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>5. Your Rights & Controls</summary>
+          <div class="inner-content">
+            <ul style="list-style-type:disc; padding-left:3rem; font-size:1.3rem;">
+              <li>Request data access/deletion: remove bot or contact us</li>
+              <li>Admins can disable transcripts, adjust retention, toggle features</li>
+              <li>Full compliance with Discord Developer Terms & Policy</li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>6. Updates & Contact</summary>
+          <div class="inner-content">
+            <p>Policy changes announced in AGF Discord and/or bot. Questions? Join <a href="https://discord.gg/agf" target="_blank" style="color:var(--neon-cyan); text-decoration:underline;">discord.gg/agf</a> or email auravynn@gmail.com.</p>
+            <p style="margin-top:2rem;">See Discord's privacy policy: <a href="https://discord.com/privacy" target="_blank" style="color:var(--neon-blue);">discord.com/privacy</a></p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section id="discord">
+      <h2 class="section-h">JOIN THE FORCE</h2>
+      <div style="text-align:center; margin:6rem 0;">
+        <a href="https://discord.gg/agf" target="_blank" class="discord-orb" style="font-size:2.5rem; padding:2rem 6rem;">ENTER DISCORD.gg/AGF NOW</a>
+        <p style="margin-top:4rem; font-size:2rem; opacity:0.9;">Be part of the most feared and respected organization in Liberty County.</p>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <div class="footer-pulse"></div>
+    <p style="font-size:3rem; font-weight:bold;">ANTI GANG FORCE</p>
+    <p style="margin:2rem 0; font-size:1.8rem;">EST. 2025 • 100+ AGENTS • ORDER. DISCIPLINE. CONTROL. 🦅</p>
+    <p style="font-size:1.4rem; opacity:0.8;">Protecting communities • Crushing criminals • Owning Liberty County</p>
+  </footer>
+
+  <script>
+    // Theme toggle (dark/light switch)
+    function toggleTheme() {
+      const html = document.documentElement;
+      const isDark = html.getAttribute('data-theme') === 'dark';
+      html.setAttribute('data-theme', isDark ? 'light' : 'dark');
+      document.querySelector('.theme-toggle').textContent = isDark ? 'Dark Mode' : 'Light Mode';
+    }
+
+    // Scroll progress rainbow
+    window.addEventListener('scroll', () => {
+      const scrolled = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+      document.getElementById('scroll-rainbow').style.width = scrolled + '%';
+    });
+
+    // Back comet visibility
+    window.addEventListener('scroll', () => {
+      document.querySelector('.back-comet').classList.toggle('show', window.scrollY > 800);
+    });
+
+    // Neon particles canvas
+    const canvas = document.getElementById('neon-void');
+    const ctx = canvas.getContext('2d');
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    const particlesArray = [];
+    const particleNum = 150;
+    const neonColors = ['#00d4ff', '#c300ff', '#ff2d55', '#39ff14', '#00faff'];
+
+    class NeonParticle {
+      constructor() {
+        this.x = Math.random() * canvas.width;
+        this.y = Math.random() * canvas.height;
+        this.size = Math.random() * 4 + 1;
+        this.speedX = Math.random() * 0.8 - 0.4;
+        this.speedY = Math.random() * 0.8 - 0.4;
+        this.color = neonColors[Math.floor(Math.random() * neonColors.length)];
+        this.opacity = Math.random() * 0.6 + 0.3;
+      }
+      update() {
+        this.x += this.speedX;
+        this.y += this.speedY;
+        if (this.x < 0 || this.x > canvas.width) this.speedX *= -1;
+        if (this.y < 0 || this.y > canvas.height) this.speedY *= -1;
+      }
+      draw() {
+        ctx.globalAlpha = this.opacity;
+        ctx.fillStyle = this.color;
+        ctx.shadowBlur = 20;
+        ctx.shadowColor = this.color;
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        ctx.fill();
+      }
+    }
+
+    for (let i = 0; i < particleNum; i++) particlesArray.push(new NeonParticle());
+
+    function animateVoid() {
+      ctx.fillStyle = 'rgba(0,3,10,0.08)';
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      particlesArray.forEach(p => { p.update(); p.draw(); });
+      requestAnimationFrame(animateVoid);
+    }
+    animateVoid();
+
+    window.addEventListener('resize', () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    });
+
+    // Stat counter animation
+    document.querySelectorAll('.stat-num').forEach(el => {
+      const target = parseInt(el.getAttribute('data-target')) || 100;
+      let count = 0;
+      const increment = target / 80;
+      const timer = setInterval(() => {
+        count += increment;
+        if (count >= target) {
+          count = target;
+          clearInterval(timer);
+        }
+        el.textContent = Math.floor(count) + (target === Infinity ? '' : '+');
+      }, 40);
+    });
+  </script>
 
 </body>
 </html>
